@@ -7,7 +7,7 @@ const BasicRoute = (props: any) => {
   const pathname = props.location.pathname
   const targetRouter = routerMap.find((item: any) => item.path === pathname)
   // const isLogin = token
-  console.log('sdsd', targetRouter)
+  console.log('sdsd', targetRouter, pathname)
   if (!targetRouter) {
     return <Redirect to="/404" />
   }
