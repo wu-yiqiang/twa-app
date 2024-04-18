@@ -6,7 +6,7 @@ import SvgIcon from '@/components/SvgIcon'
 import Item from '@/pages/home/item'
 import Explore from '@/pages/home/explore'
 import { useTranslation } from 'react-i18next' 
-import navigator from '@/navigator/index'
+// import navigator from '@/navigator/index'
 function Home(props: any) {
   const { t } = useTranslation()
   const [count, setCount] = useState(0.00)
@@ -20,8 +20,7 @@ function Home(props: any) {
   }, [])
   const gotoSend = () => {
     // console.log('sdsd', navigator)
-    // navigator.push('/crypto')
-    return navigator.push('/crypto')
+    // return navigator.push('/crypto')
     // if (true) return  props.history.push('/crypto')
   }
   const gotoAddCrypto = () => {

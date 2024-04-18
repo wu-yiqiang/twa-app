@@ -10,8 +10,8 @@ import './i18n'
 const manifestUrl = 'https://leo-xinwang.github.io/my-twa/tonconnect-manifest.json';
 ReactDOM.createRoot(document.getElementById('app') as HTMLElement).render(
   <TonConnectUIProvider manifestUrl={manifestUrl}>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </TonConnectUIProvider>
 )
