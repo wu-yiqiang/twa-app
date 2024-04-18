@@ -6,8 +6,7 @@ import SvgIcon from '@/components/SvgIcon'
 import Item from '@/pages/home/item'
 import Explore from '@/pages/home/explore'
 import { useTranslation } from 'react-i18next' 
-import { HashNavigator } from '@tma.js/sdk';
-const navigator = new HashNavigator([{}], 0)
+import navigator from '@/navigator/index'
 function Home(props: any) {
   const { t } = useTranslation()
   const [count, setCount] = useState(0.00)
@@ -20,8 +19,9 @@ function Home(props: any) {
     setDontafter(data[1] ? data[1] : '00')
   }, [])
   const gotoSend = () => {
-    console.log('sdsd', navigator)
-    return navigator.push({ pathname: '/crypto' })
+    // console.log('sdsd', navigator)
+    // navigator.push('/crypto')
+    return navigator.push('/crypto')
     // if (true) return  props.history.push('/crypto')
   }
   const gotoAddCrypto = () => {
