@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './explore.module.scss'
+import style from './explore.module.scss'
 import React, { FC } from 'react'
 import SvgIcon from '@/components/SvgIcon'
 interface ItemProps {
@@ -14,12 +14,12 @@ const Explore: FC<ItemProps> = (props) => {
   const { title, url, pic, urlStr, strColorClass, colorClass } = props
   useEffect(() => {}, [])
   return (
-    <div className={`"Explore" ${colorClass}`}>
-      <div className="leftBox">
-        <span className="title">{title}</span>
-        <span className={`url ${strColorClass}`}>{urlStr}</span>
+    <div className={`${style.Explore} ${style[colorClass]}`}>
+      <div className={style.leftBox}>
+        <span className={style.title}>{title}</span>
+        <span className={`${style.url} ${style[strColorClass]}`}>{urlStr}</span>
       </div>
-      <div className="rightBox">
+      <div className={style.rightBox}>
         <SvgIcon size="1.7rem" svgName="logo" color="#fff" />
       </div>
     </div>

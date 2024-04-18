@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
 import * as React from 'react'
 import { withRouter } from 'react-router-dom'
-import  './index.module.scss'
+import style from './index.module.scss'
 import {changeTheme} from '@/utils/index'
 function User(props: any) {
   return (
-    <div className="User">
+    <div className={style.User}>
       mine
     </div>
   )
