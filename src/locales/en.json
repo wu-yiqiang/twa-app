@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "Total balance",
+    "send": "Send",
+    "addCrypto": "Add Crypto",
+    "exchange": "Exchange",
+    "shell": "Shell",
+    "exporeTitle": "Explore now",
+    "discover": {
+      "str": "Discover Telegram app >",
+      "title": "Dive into the TON ecosytem"
+    },
+    "see": {
+      "str": "Join Wallet News >",
+      "title": "See what's new in your Wallet"
+    },
+    "get": {
+      "str": "Buy now >",
+      "title": "Get your first Bitcoin"
+    },
+    "play": {
+      "str": "Try Catizen >",
+      "title": "Play with cats and get rewards"
+    }
+  },
+  "mine": {}
+}

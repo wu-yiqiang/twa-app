@@ -1,0 +1,33 @@
+.item {
+  padding: 6px 10px;
+  background-color: var(--item-bgc-color);
+  // border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .leftBox {
+    display: flex;
+    align-items: center;
+
+    .title {
+      margin-left: 14px;
+
+      .toptitle {
+        color: var(--text-primary-color);
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .bottomtitle {
+        color: var(--text-regular-color);
+        font-size: 14px;
+      }
+    }
+  }
+
+  .rightBox {
+    font-size: 16px;
+    color: var(--text-primary-color);
+  }
+}

@@ -1,0 +1,44 @@
+.Explore {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  height: 80px;
+  width: 260px;
+  .leftBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      text-wrap: wrap;
+      color: var(--text-primary-color);
+    }
+    .url {
+      font-size: 14px;
+    }
+    .discover {
+      color: rgb(85, 144, 233);
+    }
+    .fees {
+      color: rgb(232, 141, 122);
+    }
+        .buy {
+          color: rgb(232, 141, 122);
+        }
+  }
+  .rightBox {
+    display: grid;
+    place-items: center;
+  }
+}
+.discover {
+  background-color: rgb(49, 59 , 65);
+}
+.fees {
+  background-color: rgb(53, 49, 38);
+}
+.buy {
+  background-color: rgb(53, 49, 38);
+}

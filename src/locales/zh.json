@@ -1,0 +1,27 @@
+{
+  "home": {
+    "title": "总余额",
+    "send": "发送",
+    "addCrypto": "添加加密货币",
+    "exchange": "兑换",
+    "shell": "出售",
+    "exporeTitle": "了解更多",
+    "discover": {
+      "str": "发现Telegram应用 >",
+      "title": "深入TON生态系统"
+    },
+    "see": {
+      "str": "加入钱包新闻 >",
+      "title": "查看您的钱包中的新内容"
+    },
+    "get": {
+      "str": "立即购买 >",
+      "title": "获得你的第一个Bitcoin"
+    },
+    "play": {
+      "str": "Try Catizen >",
+      "title": "Play with cats and get rewards"
+    }
+  },
+  "mine": {}
+}

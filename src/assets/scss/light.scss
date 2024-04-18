@@ -1,0 +1,24 @@
+// 颜色变量
+#app[data-theme="light"] {
+  --primary-color: rgb(19, 20, 21);
+  
+  --text-primary-color: #fff;
+  --text-regular-color: #E4E7ED;
+  --text-secondary-color: #909399;
+  --text-placeholder-color: #C0C4CC;
+  --text-active-color: #d6cdcd;
+
+  --item-bgc-color: rgb(25, 33, 42);
+}
+#app[data-theme="light"] {
+  // .var-tabs {
+  //   background-color: #f5f5f5,
+  // }
+  // .light {
+  //   $--theme-color: #fff;
+  // }
+  .dd {
+    background-color: var(--theme-color);
+  }
+}
+
