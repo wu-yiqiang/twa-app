@@ -6,7 +6,7 @@ const Miss = React.lazy(() => import('@/pages/404/index'))
 const Crypto = React.lazy(() => import('@/pages/crypto/index'))
 const routerMap: any[] = [
   {
-    path: '/',
+    path: '/twa-app/',
     redirect: '/home',
     component: Home
   },
