@@ -17,6 +17,7 @@ const alias: Record<string, string> = {
   // '@build': pathResolve('build')
 }
 export default defineConfig({
+  base: './',
   resolve: { alias },
   plugins: [
     react(),
@@ -58,7 +59,7 @@ export default defineConfig({
     //   }
     // })
   ],
-  base: './',
+
   css: {
     preprocessorOptions: {
       scss: {
@@ -73,7 +74,7 @@ export default defineConfig({
           'postcss-import': require('postcss-import'),
           autoprefixer: require('autoprefixer')
         }
-      },
+      }
     }
   },
   server: {

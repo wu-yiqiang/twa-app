@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import style from './item.module.scss'
+import './item.module.scss'
 import React, { FC } from 'react'
 import SvgIcon from '@/components/SvgIcon'
 import { Route, Router } from 'react-router-dom'
@@ -15,15 +15,15 @@ const Item: FC<ItemProps> = (props) => {
   const goToUrl = () => {
   }
   return (
-    <div className={style.item}>
-      <div className={style.leftBox}>
+    <div className="item">
+      <div className="leftBox">
         <SvgIcon size="1.1rem" svgName={typename} color="#fff" />
-        <div className={style.title}>
-          <div className={style.toptitle}>{title}</div>
-          <div className={style.bottomtitle} onClick={goToUrl}>{typecount} </div>
+        <div className="title">
+          <div className="toptitle">{title}</div>
+          <div className="bottomtitle" onClick={goToUrl}>{typecount} </div>
         </div>
       </div>
-      <div className={style.rightBox}>${count ? count : "0.00"}</div>
+      <div className="rightBox">${count ? count : "0.00"}</div>
     </div>
   )
 }
