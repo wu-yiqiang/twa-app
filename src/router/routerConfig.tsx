@@ -1,4 +1,4 @@
-import { Route, Redirect, withRouter } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import routerMap from '@/router/index'
 import { HashNavigator } from '@tma.js/sdk'
 // import userInfoModel from '@/store/store'
@@ -9,13 +9,13 @@ const BasicRoute = (props: any) => {
   // const isLogin = token
   console.log('sdsd', targetRouter, pathname)
   if (!targetRouter) {
-    return <Redirect to="/404" />
+    return <Link to="/404" />
   }
   if (targetRouter?.redirect) {
-    return <Redirect to={targetRouter.redirect} />
+    return <Link to={targetRouter.redirect} />
   }
   if (!targetRouter?.auth) {
-    return <Route exact path={targetRouter.path} component={targetRouter.component} />
+    return <Route path={targetRouter.path} element={targetRouter.component} />
   }
   // if (targetRouter.auth) {
   //   // 要登录授权
@@ -45,4 +45,4 @@ const BasicRoute = (props: any) => {
   //   }
   // }
 }
-export default withRouter(BasicRoute);
+export default BasicRoute;

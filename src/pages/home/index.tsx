@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
 import * as React from 'react'
-import { Route, Redirect, withRouter } from 'react-router-dom'
 import style from './index.module.scss'
 import SvgIcon from '@/components/SvgIcon'
 import Item from '@/pages/home/item'
 import Explore from '@/pages/home/explore'
 import { useTranslation } from 'react-i18next' 
-// import navigator from '@/navigator/index'
+import { useNavigate } from 'react-router-dom'
 function Home(props: any) {
+  const navigation = useNavigate()
   const { t } = useTranslation()
   const [count, setCount] = useState(0.00)
   const [dotbefore, setDontbefore] = useState('0')
@@ -21,6 +21,7 @@ function Home(props: any) {
   const gotoSend = () => {
     // console.log('sdsd', navigator)
     // return navigator.push('/crypto')
+    console.log('asdsa', navigation)
     // if (true) return  props.history.push('/crypto')
   }
   const gotoAddCrypto = () => {
@@ -81,4 +82,4 @@ function Home(props: any) {
   )
 }
 
-export default withRouter(Home)
+export default Home
